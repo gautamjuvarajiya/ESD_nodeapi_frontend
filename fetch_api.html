@@ -1,0 +1,14 @@
+<!-- GAUTAM :) -->
+<html>
+    <script>
+        //url = "https://reqres.in/api/users?page=1";
+        url = "https://gautamj.herokuapp.com/user";
+        fetch(url)
+        .then(response => response.json())
+        .then(x => {
+            console.log(x);
+            console.log(x.data);
+            console.table(x.data);
+        });
+    </script>
+</html>
